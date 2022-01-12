@@ -73,8 +73,10 @@ export default create({
   },
 
   jobClientStatusSummary: jobClientStatusBar('[data-test-job-client-status-bar]'),
-  childrenSummary: isPresent('[data-test-job-summary] [data-test-children-status-bar]'),
-  allocationsSummary: isPresent('[data-test-job-summary] [data-test-allocation-status-bar]'),
+  childrenSummary: jobClientStatusBar('[data-test-job-summary] [data-test-children-status-bar]'),
+  allocationsSummary: jobClientStatusBar(
+    '[data-test-job-summary] [data-test-allocation-status-bar]'
+  ),
 
   ...allocations(),
 
