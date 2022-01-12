@@ -48,7 +48,7 @@
 
               {{if (eq datum.label chart.activeDatum.label) "is-active"}}
 
-              {{if (eq datum.value 0) "is-empty"}}"
+              {{if (eq datum.value 0) "is-empty" "is-clickable"}}"
           >
             {{#if (gt datum.value 0)}}
               <LinkTo
